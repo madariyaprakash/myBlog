@@ -1,0 +1,43 @@
+laravel DB table migration in PHP...
+---------------------------------------------------------
+
+create migration files for tables what you want for your project.
+Enter this line in command prompt
+C:/xampp/htdocs/myBlog/php artisan make:model Post --migration
+
+
+first install the My sql installer
+https://dev.mysql.com/downloads/windows/installer/5.7.html
+
+now install the installer and the mysql web server
+
+after adding the mysql, configure the server with port no, server name, username and password.
+
+go with line client, it will ask the password if you have set up (eg. 12345)
+
+install the mysql workbench to manage the database.
+https://dev.mysql.com/downloads/workbench/ 
+
+now open the workbench connect your server here with all the configuration details.
+now create database through query (create database db_name;)
+after creating the database remember the database name
+
+open laravel 
+a) check .env(environment) folder and chenge all the server details and database name.
+b) open config folder -> database.php (change all the server details and DB name, user name and password).
+
+
+now go to the command prompt
+open the perticulat project folder through the command prompt
+enter the command line to migrate all the table through the laravel
+
+eg. C:/xampp/htdocs/myBog/php artisan migrate.
+all migration files will be migrated.
+
+and laravel php will create tables automatically here.
+
+
+---------------------------------------------------------------------
+to create controller automatically we can use php artisan command in command prompt
+we need to execute this command line for that.
+C:/xampp/htdocs/myBlog/php artisan make:controller Postcontroller --resource(it is optional if we want all the pre-created functions for CRUD operation)

@@ -1,0 +1,193 @@
+/* --------------For Tab start --------- */
+.tab
+{
+    float: left;
+}
+.tab button {
+    color: black;
+    transition: 0.3s;
+    font-size: 17px;
+    font-color:white;
+}
+/* Change background color of buttons on hover */
+.tab button:hover {
+    background-color: #F42D0A;
+}
+/* Create an active/current "tab button" class */
+.tab button.active {
+    background-color: #F42D0A;
+}
+
+/* ----------------- For Tab ------------ */
+
+.rcnt-post
+{
+    border-radius: 50%;
+    width:50px;
+    height:50px; 
+}
+
+.vertcal-line
+{
+    border-left: 2px solid #F42D0A;
+    height: 20px;
+    padding-right: 10px;
+}
+
+.social-links img{
+	height: 25px;
+	width: 25px;
+    filter: grayscale(100%);
+    -moz-filter: grayscale(100%);
+    -ms-filter: grayscale(100%);
+    -o-filter: grayscale(100%);
+    filter: gray; /* IE6-9 */
+    -webkit-filter: grayscale(100%); /* Chrome 19+, Safari 6+, Safari 6+ iOS */
+}
+
+.social-links img:hover{
+    height: 25px;
+    width: 25px;
+    filter: grayscale(0%);
+    -moz-filter: grayscale(0%);
+    -ms-filter: grayscale(0%);
+    -o-filter: grayscale(0%);
+    filter: gray; /* IE6-9 */
+    -webkit-filter: grayscale(0%); /* Chrome 19+, Safari 6+, Safari 6+ iOS */
+}
+
+
+
+.footer-container {
+position: relative;
+width: 100%;
+clear: both;
+padding: 15px;
+margin-lef:10px;
+/*background-color: #120c33; */
+background:url(data:images/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNTIiIGhlaWdodD0iMTUyIiB2aWV3Qm94PSIwIDAgMTUyIDE1MiI+PGcgZmlsbC1ydWxlPSJldmVub2RkIj48ZyBpZD0idGVtcGxlIiBmaWxsPSIjMDAwIj48cGF0aCBkPSJNMTUyIDE1MHYySDB2LTJoMjh2LThIOHYtMjBIMHYtMmg4VjgwaDQydjIwaDIwdjQySDMwdjhoOTB2LThIODB2LTQyaDIwVjgwaDQydjQwaDhWMzBoLTh2NDBoLTQyVjUwSDgwVjhoNDBWMGgydjhoMjB2MjBoOFYwaDJ2MTUwem0tMiAwdi0yOGgtOHYyMGgtMjB2OGgyOHpNODIgMzB2MThoMThWMzBIODJ6bTIwIDE4aDIwdjIwaDE4VjMwaC0yMFYxMEg4MnYxOGgyMHYyMHptMCAydjE4aDE4VjUwaC0xOHptMjAtMjJoMThWMTBoLTE4djE4em0tNTQgOTJ2LTE4SDUwdjE4aDE4em0tMjAtMThIMjhWODJIMTB2MzhoMjB2MjBoMzh2LTE4SDQ4di0yMHptMC0yVjgySDMwdjE4aDE4em0tMjAgMjJIMTB2MThoMTh2LTE4em01NCAwdjE4aDM4di0yMGgyMFY4MmgtMTh2MjBoLTIwdjIwSDgyem0xOC0yMEg4MnYxOGgxOHYtMTh6bTItMmgxOFY4MmgtMTh2MTh6bTIwIDQwdi0xOGgxOHYxOGgtMTh6TTMwIDBoLTJ2OEg4djIwSDB2Mmg4djQwaDQyVjUwaDIwVjhIMzBWMHptMjAgNDhoMThWMzBINTB2MTh6bTE4LTIwSDQ4djIwSDI4djIwSDEwVjMwaDIwVjEwaDM4djE4ek0zMCA1MGgxOHYxOEgzMFY1MHptLTItNDBIMTB2MThoMThWMTB6Ii8+PC9nPjwvZz48L3N2Zz4=) no-repeat;
+color:gray;
+font-size: 14px;
+ margin: 0 auto;
+
+}
+
+.border-test{
+	border-color: red;
+	border-style: solid;
+}
+
+
+.blog-footer {
+    padding: 2.5rem 0;
+    color: #999;
+    width: 100%;
+    text-align: center;
+    background-color: #f9f;
+    border-top: .05rem solid #e5e5e5;
+}
+
+.blogButton-primary {
+    color: #fff;
+    background-color: #F42D0A;
+    border-color: #F42D0A;
+
+}
+.blogButton {
+
+    display: inline-block;
+    font-weight: 400;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    border: 1px solid transparent;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    border-radius: .25rem;
+    transition: background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+
+.blogButton:hover {
+    background-color: #120c33;
+    color: white;
+    text-decoration: none;
+}
+
+.border{
+ border-style: solid;
+ border-color: black;
+}
+
+.content-top-spacing
+{
+	margin-top:20px;
+}
+
+.btn-h1-spacing
+{
+	margin-top: 18px;
+}
+
+.text-top-spacing
+{
+	margin-top: 18px;
+}
+
+.top-spacing
+{
+	margin-top:20px;
+}
+
+.comment-form-top-spacing
+{
+	margin-top:50px;
+}
+
+.comment
+{
+	margin-bottom: 45px;
+}
+
+.author-image
+{
+	border-radius: 50%;
+	width: 50px;
+	height: 50px;
+	float: left;
+}
+
+.author-name
+{
+	float: left;
+	margin-left: 15px;
+}
+
+.author-info
+{
+	margin:5px 0px;
+}
+
+.auther-time
+{
+	font-size: 11px;
+	font-style: italic;
+	color: #767777;
+}
+
+.comment-content
+{
+	clear: both;
+	margin-left: 65px;
+	line-height: 1.3em;
+	font-size: 16px;
+}
+
+.comments-title
+{
+	margin-bottom:35px;
+}
