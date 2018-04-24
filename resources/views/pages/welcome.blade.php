@@ -6,7 +6,7 @@
             <div class="row content-top-spacing">
                 <div class="col-md-12">
                     <div class="jumbotron">
-                      <h1 class="display-3">Welcome to codellipse.</h1>
+                      <h1 class="display-3">Hello, This is ellipse of coders.</h1>
                       <p class="lead">This is a simple place to learn things, be expert on programming of your own.</p>
                       <hr class="my-4">
                       <p>Thanks for joining us!!</p>
