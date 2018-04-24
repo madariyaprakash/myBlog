@@ -1,7 +1,7 @@
   <nav class="navbar navbar-expand-lg navbar-light bd-navbar">
         <nav class="navbar navbar-light">
   <a class="navbar-brand" href="#">
-    <img src="/images/codellipse.svg" width="140px" height="30px" alt="codellipse">
+    <img src="/images/codellipse4.png" width="140px" height="25px" alt="codellipse">
   </a>
 </nav>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">

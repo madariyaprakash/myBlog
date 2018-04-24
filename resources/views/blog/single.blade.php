@@ -33,13 +33,13 @@
 							    </div>
 							</div>	
 						</div>
-
+{{-- 
 						<script src = "{{ asset('js/like.js') }}"></script>
 
 						<script type="text/javascript">
 							var token  = '{{ Session::token() }}';
 							var urlLike = '{{ route('like') }}';
-						</script>
+						</script> --}}
 
 						<div class="col-md-8">
 							@foreach($post->comments as $comment)

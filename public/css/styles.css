@@ -1,3 +1,14 @@
+.img-circular{
+ width: 160px;
+ height: 160px;
+ background-image: url('/images/mypic.jpg');
+ background-size: cover;
+ display: block;
+ border-radius: 100px;
+ -webkit-border-radius: 100px;
+ -moz-border-radius: 100px;
+}
+
 /* --------------For Tab start --------- */
 .tab
 {

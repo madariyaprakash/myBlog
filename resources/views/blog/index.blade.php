@@ -5,7 +5,7 @@
 @section('content')
 
 		<div class="row content-top-spacing">
-			<div class="col-md-10 md-offset-1">
+			<div class="col-md-12 md-offset-1">
 				<h1>Blog</h1>
 			</div>
 		</div>
