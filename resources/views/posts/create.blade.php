@@ -1,4 +1,4 @@
-@extends('main')
+@extends('admin_main')
 
 @section('title','| Create Post')
 
