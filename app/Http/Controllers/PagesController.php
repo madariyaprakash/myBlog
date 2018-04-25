@@ -72,7 +72,7 @@ e) process variable data and params.
 		//here emails.contact we created view to show in to the mail 
 		Mail::send('emails.contact', $data, function($message) use ($data){
 			$message->from($data['email']);
-			$message->to('tak2prakash@gmail.com');
+			$message->to('codellipse@gmail.com');
 			$message->subject($data['subject']);
 		});
 

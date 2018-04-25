@@ -1,5 +1,5 @@
   <head>
-    <title>My Blog @yield('title')</title>  <!-- HERE WE HAVE SEPERATE TITLE SO USING YIELD OPTION TO PASS THE DIFFERENT IN 
+    <title>codellipse @yield('title')</title>  <!-- HERE WE HAVE SEPERATE TITLE SO USING YIELD OPTION TO PASS THE DIFFERENT IN 
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -14,7 +14,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <!-- for social link "sharethis"-source -->
-    <script type="text/javascript" src="//platform-api.sharethis.com/js/sharethis.js#property=5ab384fc123a8f0012bdd355&product=sticky-share-buttons"></script>
+
+    <script type='text/javascript' src='//platform-api.sharethis.com/js/sharethis.js#property=5ab384fc123a8f0012bdd355&product=sticky-share-buttons' async='async'></script>
 
     
 
