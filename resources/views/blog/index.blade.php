@@ -18,7 +18,7 @@
 									<img class="card-img-top" src="images/post_background.jpeg" alt="{{ $post->title }}">
 								<div class="card-body">
 									<h5 class="card-title">{{ $post->title }}</h5>
-									<p class="card-text">{{ substr($post->body, 0, 250) }}{{ strlen($post->body) > 250 ? '...' : "" }}</p>
+									<p class="card-text">{{ substr(strip_tags($post->body), 0, 250) }}{{ strlen(strip_tags($post->body)) > 250 ? '...' : "" }}</p>
 									<a href="{{ route('blog.single', $post->slug) }}" class="btn btn-primary">Read more</a>
 									<p class="card-text"><small class="text-muted">Posted at : {{ date('M j, Y', strtotime($post->created_at)) }}
 									</small></p>
