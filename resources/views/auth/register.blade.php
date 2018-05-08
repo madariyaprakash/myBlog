@@ -5,27 +5,25 @@
 
 @section('content')
 <br>
-    <div class="row content-top-spacing">
-        <div class="col-md-4 offset-md-4">
-            <div class="card"> 
-                    <div class="card-header"> Registration Page</div> 
-                    <div class="card-body">
+    <div class="row">
+        <div class="col-md-8 offset-md-2">
+            <div class="account-wall">
+                 <img class="profile-img" src="/images/signupICon.png"
+                            alt="sign up img">
+                    <div class="form-signin ">
                         {!! Form::open() !!}
 
-                            {{ Form::label('name', "Name:") }}
-                            {{ Form::text('name', null, ['class' => 'form-control']) }}
-
-                            {{ Form::label('email', "Email:") }}
-                            {{ Form::email('email', null, ['class' => 'form-control']) }}
-
-                            {{ Form::label('password', "Password:") }}
-                            {{ Form::password('password', ['class' => 'form-control']) }}
-
-                            {{ Form::label('password_confirmation', "Confirm Password:") }}
-                            {{ Form::password('password_confirmation', ['class' => 'form-control']) }}
+                            {{ Form::text('name', null, ['class' => 'form-control', 'placeholder' => 'Name']) }}
+    
+                            {{ Form::email('email', null, ['class' => 'form-control','placeholder' => 'Email']) }}
+                            
+                            {{ Form::password('password', ['class' => 'form-control','placeholder' => 'Password']) }}
+                            
+                            {{ Form::label('password_confirmation', 'Please confirm the password', ['class' =>'signup-title' ]) }}
+                            {{ Form::password('password_confirmation', ['class' => 'form-control','placeholder' => 'Confirm password']) }}
                             
                             <br>
-                            {{ Form::submit('Register', array('class' => 'btn btn-primary', 'style' => 'text-decoration:none;')) }}
+                            {{ Form::submit('Sign up', array('class' => 'btn btn-lg signin-button btn-block top', 'style' => 'text-decoration:none;')) }}
 
                         {!! Form::close() !!}
                     </div>

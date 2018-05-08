@@ -21,6 +21,11 @@
 
 
 
+
+//Facebook Authentication route is here.
+Route::get('login/{provider}', 'Auth\LoginController@redirectToProvider');
+Route::get('login/{provider}/callback', 'Auth\LoginController@handleProviderCallback');
+
 //Authendtication routes
 Route::get('auth/login' ,['as' => 'login', 'uses' => 'Auth\LoginController@showLoginForm']);
 Route::post('auth/login', 'Auth\LoginController@login');
@@ -66,6 +71,8 @@ Route::get('blog', ['as' => 'blog.index', 'uses' => 'BlogController@getIndex']);
 Route::get('contact', "PagesController@getContact");
 Route::post('contact', "PagesController@postContact");
 Route::get('about', "PagesController@getAbout");
+Route::get('video-tutorials', "PagesController@getVideoTutorials");
+Route::get('projects', "PagesController@getProjects");
 //Route::get('test', "PagesController@getTest");
 Route::get('/', "PagesController@getIndex");
 Route::resource('posts', 'PostController');  //to route all the action for post "CRUD"

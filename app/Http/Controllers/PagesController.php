@@ -81,5 +81,12 @@ e) process variable data and params.
 		return redirect('/');
 	}
 
+	public function getVideoTutorials(){
+		return 'Tutorial section and going to update soon';
+	}
+	public function getProjects(){
+		return '<h1>Project page under constuctions</h1>';
+	}
+
 }
 

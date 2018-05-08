@@ -1,3 +1,162 @@
+/*li {
+  margin: 10px 5px;
+}
+*//*------------------ LOGIN PAGE EDITING STARTS HERE----------------*/
+.signup-title{
+    text-align: center;
+    margin: 0 auto 10px;
+    font-size: 0.8rem;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%; 
+    color:orange;      
+}
+.signup-separator{
+    text-align: center;
+    color: darkred;
+    margin: 0 auto 10px;
+    font-size: 1rem;
+}
+.signup-btn{
+    width: 50px;
+    height: 50px;
+    margin: 0 auto 10px;
+    display: block;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    color:white;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+.signup-btn-google{
+    background-color:#cc0028;
+}
+.signup-btn-google:hover {
+    color:#cc0028;
+    background-color: #0000;
+    box-shadow: 0px 0px 30px #cc0028;
+}
+.signup-btn-facebook{
+    background-color: #3B4BBA;
+}
+.signup-btn-facebook:hover {
+    color:#3B4BBA;
+    background-color: #0000;
+    box-shadow: 0px 0px 30px #3B4BBA;
+}
+.signup-btn-twitter{
+    background-color: #2DC1EC;
+}
+.signup-btn-twitter:hover {
+    color:#2DC1EC;
+    background-color: #0000;
+    box-shadow: 0px 0px 30px #2DC1EC;
+}
+.signin-button {
+    background-color: darkred;
+    color: white;
+}
+.signin-button:hover{
+    background-color: black;
+    color: white;
+}
+.form-signin
+{
+    max-width: 330px;
+    padding: 15px;
+    margin: 0 auto;
+}
+.form-signin .form-signin-heading, .form-signin .checkbox
+{
+    margin-bottom: 10px;
+}
+.form-signin .checkbox
+{
+    font-weight: normal;
+}
+.form-signin .form-control
+{
+    position: relative;
+    font-size: 16px;
+    height: auto;
+    padding: 10px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.form-signin .form-control:focus
+{
+    z-index: 2;
+}
+.form-signin input[type="text"]
+{
+    margin-bottom: -1px;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+}
+.form-signin input[type="password"]
+{
+    margin-bottom: 10px;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+}
+.account-wall
+{
+    margin-top: 20px;
+    padding: 40px 0px 20px 0px;
+    background-color: #f7f7f7;
+    -moz-box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+    -webkit-box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+}
+.login-title
+{
+    color: #555;
+    font-size: 18px;
+    font-weight: 400;
+    display: block;
+}
+.profile-img
+{
+    width: 96px;
+    height: 96px;
+    margin: 0 auto 10px;
+    display: block;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+}
+.profile-img-gray
+{
+    filter: grayscale(100%);
+    -moz-filter: grayscale(100%);
+    -ms-filter: grayscale(100%);
+    -o-filter: grayscale(100%);
+    filter: gray; /* IE6-9 */
+    -webkit-filter: grayscale(100%);
+}
+.need-help
+{
+    margin-top: 10px;
+}
+.new-account
+{
+    display: block;
+    margin-top: 10px;
+}
+
+
+.card-header-design{
+    color:white;
+    background-color: red;
+}
+/*------------------ LOGIN PAGE EDITING ENDS HERE----------------*/
+
+
+
+/*------------------ ABOUT ME (MY PIC DESIGNING IN CIRCULAR BOX)----------------*/
 .img-circular{
  width: 160px;
  height: 160px;
@@ -8,6 +167,10 @@
  -webkit-border-radius: 100px;
  -moz-border-radius: 100px;
 }
+/*------------------ ABOUT ME (MY PIC DESIGNING IN CIRCULAR BOX) ENDS HEREs----------------*/
+
+
+
 
 /* --------------For Tab start --------- */
 .tab
@@ -100,8 +263,8 @@ font-size: 14px;
 
 .blogButton-primary {
     color: #fff;
-    background-color: #F42D0A;
-    border-color: #F42D0A;
+    background-color: darkred;
+    border-color: darkred;
 
 }
 .blogButton {
@@ -116,10 +279,9 @@ font-size: 14px;
     -ms-user-select: none;
     user-select: none;
     border: 1px solid transparent;
-    padding: .375rem .75rem;
+    padding: .500rem .75rem;
     font-size: 1rem;
     line-height: 1.5;
-    border-radius: .25rem;
     transition: background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
 }
 
