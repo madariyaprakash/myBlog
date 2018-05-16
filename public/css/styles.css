@@ -260,15 +260,52 @@ font-size: 14px;
     background-color: #f9f;
     border-top: .05rem solid #e5e5e5;
 }
+.postButton:hover {
+    color: #fff;
+    background-color: #CE4B03;
+    text-decoration: none;
+
+}
+.postButton-primary {
+    color: #fff;
+    background-color: #052363;
+    background-image: none;
+    border-color: #28a745;
+
+}
+.postButton {
+    border-radius:20px;
+    display: inline-block;
+    font-weight: 400;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    border: 1px solid transparent;
+    padding: .250rem .55rem;
+    font-size: 0.8rem;
+    line-height: 1.5;
+    transition: background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+
+.blogButton:hover {
+    background-color: #052363;
+    color: white;
+    text-decoration: none;
+}
 
 .blogButton-primary {
     color: #fff;
-    background-color: darkred;
+    background-color: #CE4B03;
     border-color: darkred;
 
 }
-.blogButton {
 
+.blogButton {
+    border-radius:5px;
     display: inline-block;
     font-weight: 400;
     text-align: center;
@@ -285,11 +322,34 @@ font-size: 14px;
     transition: background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
 }
 
-.blogButton:hover {
-    background-color: #120c33;
-    color: white;
+.lgnbtn-primary:hover{
+     color: #fff;
+    background-color: #CE4B03;
     text-decoration: none;
 }
+.lgnbtn-primary{
+     color: #fff;
+    background-color: #052363;
+    background-image: none;
+}
+.lgnbtn{
+   border-radius:50px;
+    display: inline-block;
+    font-weight: 400;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    border: 1px solid transparent;
+    padding: .500rem .75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    transition: background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;  
+}
+
 
 .border{
  border-style: solid;

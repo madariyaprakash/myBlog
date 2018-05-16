@@ -25,7 +25,7 @@
                             <h3>{{$post->title }}</h3>
                             <!-- strip_tags() function we used here to not to show the body in html formate rather in plain text formate-->
                             <p>{{ substr(strip_tags($post->body), 0, 300) }}{{ strlen(strip_tags($post->body)) > 300 ? "..." : "" }}</p>
-                            <a href="{{ url('blog/'.$post->slug) }}" class="blogButton blogButton-primary">Read more</a>
+                            <a href="{{ url('blog/'.$post->slug) }}" class="postButton postButton-primary">Read more</a>
                             <!--'blog/' is used to route for the specific slug -->
                             <!-- in url($post->slug) here it will check for the specific post which user will select that will send to the blogcontroller and that will send to the single view to show all the data which belong to the particular slug -->
                         </div>

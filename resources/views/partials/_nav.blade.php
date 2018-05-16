@@ -59,7 +59,7 @@
               <a class="dropdown-item" href="{{ route('logout') }}">Logout</a>
           @else
 
-              <a href="{{route('login')}}" class="btn btn-primary">Login</a>
+              <a href="{{route('login')}}" class="lgnbtn lgnbtn-primary">Login</a>
           @endif
         </ul>
         </div>
