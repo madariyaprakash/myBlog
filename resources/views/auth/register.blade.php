@@ -7,7 +7,6 @@
 <br>
     <div class="row">
         <div class="col-md-8 offset-md-2">
-            <div class="account-wall">
                {{--   <img class="profile-img" src="/images/signupICon.png"
                             alt="sign up img"> --}}
                     <div class="form-signin ">
@@ -39,7 +38,9 @@
 
                         {!! Form::close() !!}
                     </div>
-            </div>
+
         </div>
     </div>
 @endsection
+
+

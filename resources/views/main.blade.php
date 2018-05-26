@@ -11,6 +11,7 @@
    {{-- @include('partials._social')  --}} <!-- this is for social link plugin -->
 
         <div class="container">
+          
 
           @include('partials._message') <!-- here we are using partial/message view to display specific message  -->
             

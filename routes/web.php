@@ -66,6 +66,9 @@ Route::get('comments/{id}/delete', ['as' => 'comments.delete', 'uses' => 'Commen
 
 //Route::resource('comments', 'CommentsController'); 
 
+//User setting controlles
+Route::get('user-details', "UserAccSettingController@userDetails");
+
 Route::get('blog/{slug}', ['as' => 'blog.single', 'uses' => 'BlogController@getSingle'])->where('slug','[\w\d\-\_]+');
 Route::get('blog', ['as' => 'blog.index', 'uses' => 'BlogController@getIndex']);
 Route::get('contact', "PagesController@getContact");

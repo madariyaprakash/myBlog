@@ -26,4 +26,5 @@
                     </form>                                                                <!--End register form -->
                 </div>
             </div>
+
 @endsection

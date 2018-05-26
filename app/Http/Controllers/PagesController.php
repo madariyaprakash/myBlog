@@ -87,6 +87,5 @@ e) process variable data and params.
 	public function getProjects(){
 		return '<h1>Project page under constuctions</h1>';
 	}
-
 }
 
