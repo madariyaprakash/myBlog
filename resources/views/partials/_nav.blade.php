@@ -54,7 +54,7 @@
                 Hello! <span class="text text-primary">{{ Auth::user()->name }}</span>
               </a>
               <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <div class="card" style="width: 15rem;">
+                {{-- <div class="card" style="width: 15rem;">
                   <img class="card-img-top" src=".../100px180/?text=Image cap" alt="Card image cap">
                   <div class="card-body">
                     <h5 class="card-title">Card title</h5>
@@ -68,13 +68,14 @@
                   <div class="card-body">
                     <a href="#" class="card-link">Card link</a>
                     <a href="#" class="card-link">Another link</a>
-                  </div>
-                </div>
-                {{-- <a class="dropdown-item" href="/user-details">Account settings</a>
-                <a class="dropdown-item" href="#">Change password</a>
-                <a class="dropdown-item" href="#"></a>
-                <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="{{ route('logout') }}">Logout</a> --}}
+                  </div> --}}
+                       <a class="dropdown-item" href="/user-details">Account settings</a>
+                    <a class="dropdown-item" href="#">Change password</a>
+                    <a class="dropdown-item" href="#"></a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="{{ route('logout') }}">Logout</a>
+                </div> 
+               
             @else
 
                 <a href="{{route('login')}}" class="lgnbtn lgnbtn-primary">Login</a>
