@@ -96,7 +96,7 @@
             {{-- <form>
               <input type="text" name="search" placeholder="Search..">
             </form> --}}
-            <form class="example" action="#">
+            <form class="example" action="#" accept-charset="utf-8">
               <input type="text" placeholder="Search.." name="search">
               <button type="submit"><i class="icon-search"></i></button>
               <button type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample"><i class="icon-collapse"></i><span class="search-more-text"> Search with tags</span></button>
