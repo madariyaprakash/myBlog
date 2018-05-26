@@ -12,6 +12,7 @@
     {{ Html::style('css/social.css') }}
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.min.css">
 
     <!-- for social link "sharethis"-source -->
 
