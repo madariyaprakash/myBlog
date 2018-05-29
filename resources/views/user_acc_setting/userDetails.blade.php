@@ -12,14 +12,14 @@
 <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
 <div class="container">
     <div class="row user-menu-container square">
-        <div class="col-md-7 user-details">
+        <div class="col-md-6 user-details">
             <div class="row coralbg white">
                 <div class="col-md-6 no-pad">
                     <div class="user-pad">
-                        <h3>Welcome back, Jessica</h3>
+                        <h3>Welcome back, {{ $userdetails->name }}</h3>
                         <h4 class="white"><i class=""></i> San Antonio, TX</h4>
                         <h4 class="white"><i class=""></i> CoolesOCool</h4>
-                        <button type="button" class="btn btn-labeled btn-info" href="#">Update</button>
+                        <button type="button" class=" btn-update" href="#">Update</button>
                     </div>
                 </div>
                 <div class="col-md-6 no-pad">
@@ -28,7 +28,7 @@
                     </div>
                 </div>
             </div>
-            <div class="row overview">
+            {{-- <div class="row overview">
                 <div class="col-md-4 user-pad text-center">
                     <h3>FOLLOWERS</h3>
                     <h4>2,784</h4>
@@ -41,21 +41,21 @@
                     <h3>APPRECIATIONS</h3>
                     <h4>4,901</h4>
                 </div>
-            </div>
+            </div> --}}
         </div>
         <div class="col-md-1 user-menu-btns">
             <div class="btn-group-vertical square" id="responsive">
                 <a href="#" class="btn btn-block btn-default active">
-                  <i class="fa fa-bell-o fa-3x"></i>
+                  <i class="icon-bell"></i>
                 </a>
                 <a href="#" class="btn btn-default">
-                  <i class="fa fa-envelope-o fa-3x"></i>
+                  <i class="icon-cog"></i>
                 </a>
                 <a href="#" class="btn btn-default">
-                  <i class="fa fa-laptop fa-3x"></i>
+                  <i class="icon-laptop"></i>
                 </a>
                 <a href="#" class="btn btn-default">
-                  <i class="fa fa-cloud-upload fa-3x"></i>
+                  <i class="icon-cloud"></i>
                 </a>
             </div>
         </div>
@@ -112,7 +112,7 @@
                                 <a href="" rel="tooltip" title="Appreciate"><span class="fa fa-heart-o fa-2x"></span></a>
                                 <a href="" rel="tooltip" title="View"><span class="fa fa-search fa-2x"></span></a>
                             </div>
-                            <img src="http://24.media.tumblr.com/273167b30c7af4437dcf14ed894b0768/tumblr_n5waxesawa1st5lhmo1_1280.jpg" class="img-responsive">
+                          {{--   <img src="http://24.media.tumblr.com/273167b30c7af4437dcf14ed894b0768/tumblr_n5waxesawa1st5lhmo1_1280.jpg" class="img-responsive"> --}}
                         </div>
                         <div class="info">
                             <p class="small" style="text-overflow: ellipsis">An Awesome Title</p>
@@ -130,7 +130,7 @@
                                 <a href="" rel="tooltip" title="Appreciate"><span class="fa fa-heart-o fa-2x"></span></a>
                                 <a href="" rel="tooltip" title="View"><span class="fa fa-search fa-2x"></span></a>
                             </div>
-                            <img src="http://24.media.tumblr.com/282fadab7d782edce9debf3872c00ef1/tumblr_n3tswomqPS1st5lhmo1_1280.jpg" class="img-responsive">
+                           {{--  <img src="http://24.media.tumblr.com/282fadab7d782edce9debf3872c00ef1/tumblr_n3tswomqPS1st5lhmo1_1280.jpg" class="img-responsive"> --}}
                         </div>
                         <div class="info">
                             <p class="small" style="text-overflow: ellipsis">An Awesome Title</p>

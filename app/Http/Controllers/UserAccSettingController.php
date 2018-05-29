@@ -3,7 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\Post;
+use App\User;
 
 class UserAccSettingController extends Controller
 {
@@ -12,10 +12,11 @@ class UserAccSettingController extends Controller
     	$this->middleware('auth');
     } 
 
-	public function userDetails()
+	public function userDetails($id)
 	{
 		//$username = $post->title;
-		return view('user_acc_setting.userDetails');
+		$users = User::find($id);
+		return view('user_acc_setting.userDetails')->with('userdetails',$users);
 	}
 
 }

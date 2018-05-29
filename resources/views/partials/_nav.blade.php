@@ -69,7 +69,7 @@
                     <a href="#" class="card-link">Card link</a>
                     <a href="#" class="card-link">Another link</a>
                   </div> --}}
-                       <a class="dropdown-item" href="/user-details">Account settings</a>
+                       <a class="dropdown-item" href="/user-details/ {{ Auth::user()->id }}">Account settings</a>
                     <a class="dropdown-item" href="#">Change password</a>
                     <a class="dropdown-item" href="#"></a>
                     <div class="dropdown-divider"></div>
