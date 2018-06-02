@@ -1,4 +1,177 @@
+@import url('https://fonts.googleapis.com/css?family=Pacifico|Open+Sans');
 
+
+/*---------About me page design Ends here ------------------------------*/
+.font-style{
+    font-family: "Pacifico", "Open Sans", sans-serif;
+    font-size: 15px;
+    color: gray;
+}
+.abtme-wall
+{
+    margin-top: 20px;
+    padding: 40px 0px 20px 0px;
+    background-color: #fff;
+    -moz-box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.5);
+    -webkit-box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.5);
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+}
+.profile-img
+{
+    width: 100px;
+    height: 100px;
+    margin: 0 auto 10px;
+    display: block;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+}
+.profile-img-gray
+{
+    filter: grayscale(100%);
+    -moz-filter: grayscale(100%);
+    -ms-filter: grayscale(100%);
+    -o-filter: grayscale(100%);
+    filter: gray; /* IE6-9 */
+    -webkit-filter: grayscale(100%);
+}
+/*---------About me page design Ends here ------------------------------*/
+
+/*---------Changing the NAVBAR and DROPDOWN list design -ENDS -----------*/
+.navbar-light .navbar-nav .nav-link{
+    font-weight:bold;
+    text-transform:uppercase;
+    font-size:0.8rem;
+}
+.dropdown-item {
+    display: block;
+    width: 100%;
+    padding: .25rem 1.5rem;
+    clear: both;
+    font-weight:bold;
+    text-transform:uppercase;
+    font-size:0.8rem;
+    color: #212529;
+    text-align: inherit;
+    white-space: nowrap;
+    background: 0 0;
+    border: 0;
+}
+.dropdown-item:hover{
+    display: block;
+    width: 100%;
+    padding: .25rem 1.5rem;
+    clear: both;
+    font-weight:bold;
+    text-transform:uppercase;
+    font-size:0.8rem;
+    color: #fff;
+    text-align: inherit;
+    white-space: nowrap;
+    background:orange;
+    border: 0;
+}
+/*---------Changing the NAVBAR and DROPDOWN list design -ENDS ---------------*/
+
+/*-------------------------- Login page block border styling - start ---------*/
+.list-block-item{
+    position: relative;
+    display: block;
+    padding: .75rem 1.25rem;
+    margin-bottom: -1px;
+    background-color:#fff;
+}
+/*-------------------------- Login page block border styling - end ---------*/
+.social-block {
+  display: inline-flex;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+
+.social-block a {
+  color: #fff;
+  background-color:#f6563a;
+  border-radius: 5px;
+  text-align: center;
+  text-decoration: none;
+  position: relative;
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  padding-top: 12px;
+  margin: 0 14px;
+  transition: all .5s;
+  box-sizing: border-box;
+}
+
+.social-block a:hover {
+  background-color:#c4442e;
+}
+
+.social-block a span {
+  color: #fff;
+  position: absolute;
+  font-family: sans-serif;
+  bottom: 0;
+  left: -25px;
+  right: -25px;
+  padding: 5px 7px;
+  z-index: -1;
+  font-size: 14px;
+  border-radius: 2px;
+  background: gray;
+  visibility: hidden;
+  opacity: 0;
+  transition: all .5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.social-block a span:before {
+  content: '';
+  width: 0; 
+  height: 0; 
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-top: 5px solid gray;
+  position: absolute;
+  bottom: -5px;
+  left: 40px;
+}
+
+.social-block a:hover span {
+  bottom: 50px;
+  visibility: visible;
+  opacity: 1;
+}
+
+
+
+/*------------------------------ Page Scrolling percentage starts here ------------------ */
+#page--scrolling {
+    position: fixed;
+    top: 120px;
+    left: 0;
+    height: 5px;
+    width: 0;
+    z-index: 1;
+    background: orange;
+   
+}
+#page--scrolling #page--scrolling-perc {
+    float: right;
+    width: 50px;
+    margin-top: 5px;
+    color: #FFF;
+    font-size:10px;
+    font-weight: 700;
+    font-family: 'Montserrat', Arial, sans-serif;
+    background-color: orange;
+    padding: 5px;
+    text-align: center;
+}
+/*------------------------------ Page Scrolling percentage ends here ------------------ */
 
 /*--- to import icons for the webp pages that is font-awesome ------*/
 /*@import url('https://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.min.css');*/
@@ -85,10 +258,6 @@ input[type=text]:focus {
     color:white;
     background-color:#052363;
     border: 1px solid #052363;
-}
-
-.square, .btn {
-    border-radius: 0px!important;
 }
 
 /* -- color classes -- */
@@ -300,9 +469,6 @@ div.user-menu div.user-menu-content:not(.active){
     margin-top: 15px;
 }
 
-.square, .btn {
-    border-radius: 0px!important;
-}
 /*-------------------USER PROFILE STYLING ENDS HERE -------------------- */
 
 
@@ -434,25 +600,7 @@ div.user-menu div.user-menu-content:not(.active){
     font-weight: 400;
     display: block;
 }
-.profile-img
-{
-    width: 96px;
-    height: 96px;
-    margin: 0 auto 10px;
-    display: block;
-    -moz-border-radius: 50%;
-    -webkit-border-radius: 50%;
-    border-radius: 50%;
-}
-.profile-img-gray
-{
-    filter: grayscale(100%);
-    -moz-filter: grayscale(100%);
-    -ms-filter: grayscale(100%);
-    -o-filter: grayscale(100%);
-    filter: gray; /* IE6-9 */
-    -webkit-filter: grayscale(100%);
-}
+
 .need-help
 {
     margin-top: 10px;
@@ -640,18 +788,18 @@ font-size: 14px;
 
 .lgnbtn-primary:hover{
      color: #fff;
-    background-color: #CE4B03;
+    background-color: orange;
     text-decoration: none;
 }
 .lgnbtn-primary{
      color: #fff;
-    background-color: #052363;
+    background-color: gray;
     background-image: none;
 }
 .lgnbtn{
-   border-radius:50px;
+   border-radius:100px;
     display: inline-block;
-    font-weight: 400;
+    font-weight: bold;
     text-align: center;
     white-space: nowrap;
     vertical-align: middle;
@@ -660,8 +808,10 @@ font-size: 14px;
     -ms-user-select: none;
     user-select: none;
     border: 1px solid transparent;
-    padding: .500rem .75rem;
-    font-size: 1rem;
+    padding: .30rem .90rem;
+    font-size: 1
+
+    rem;
     line-height: 1.5;
     transition: background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;  
 }

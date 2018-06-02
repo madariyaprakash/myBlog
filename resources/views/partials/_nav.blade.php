@@ -1,4 +1,4 @@
-  <nav class="navbar navbar-expand-lg navbar-light bd-navbar">
+  <nav class="navbar navbar-expand-lg navbar-light bd-navbar navbar-fixed-top">
         <nav class="navbar navbar-light">
   <a class="navbar-brand" href="#">
     <img src="/images/codellipse4.png" width="140px" height="25px" alt="codellipse">
@@ -78,7 +78,7 @@
                
             @else
 
-                <a href="{{route('login')}}" class="lgnbtn lgnbtn-primary">Login</a>
+                <a href="{{route('login')}}" class="lgnbtn lgnbtn-primary"><i class="fas fa-user-circle fa-lg"></i> Login</a>
             @endif
             </div>
         </ul>
@@ -105,14 +105,35 @@
             <div class="collapse" id="collapseExample">
                 <div class="card card-body">
                   <div class="row">
-                    <a href="#">A1</a>
-                    <a href="#">A2</a>
-                    <a href="#">A3</a>
-                    <a href="#">A4</a>
-                    <a href="#">A5</a>
-                    <a href="#">A6</a>
-                    <a href="#">A7</a>
-                    <a href="#">A8</a>
+                    <a href="#"><span class="badge badge-secondary">Laravel</span></a>&nbsp;
+                    <a href="#"><span class="badge badge-secondary">.Net</span></a>&nbsp;
+                    <a href="#"><span class="badge badge-secondary">Javascript</span></a>&nbsp;
+                    <a href="#"><span class="badge badge-secondary">Html</span></a>&nbsp;
+                    <a href="#"><span class="badge badge-secondary">Css</span></a>&nbsp;
+                    <a href="#"><span class="badge badge-secondary">C#.Net</span></a>&nbsp;
+                    <a href="#"><span class="badge badge-secondary">Ajax</span></a>&nbsp;
+                    <a href="#"><span class="badge badge-secondary">JQuery</span></a>&nbsp;
+                    <a href="#"><span class="badge badge-secondary">AngularJS</span></a>&nbsp;
+                    <a href="#"><span class="badge badge-secondary">SQL</span></a>&nbsp;
+                    <a href="#"><span class="badge badge-secondary">MySQL</span></a>&nbsp;
+                    <a href="#"><span class="badge badge-secondary">Oracle</span></a>&nbsp;
+                    <a href="#"><span class="badge badge-secondary">C</span></a>&nbsp;
+                    <a href="#"><span class="badge badge-secondary">C++</span></a>&nbsp;
+                    <a href="#"><span class="badge badge-secondary">API'S</span></a>&nbsp;
+                    <a href="#"><span class="badge badge-secondary">WebServer</span></a>&nbsp;
+                    <a href="#"><span class="badge badge-secondary">Java</span></a>&nbsp;
+                    <a href="#"><span class="badge badge-secondary">PHP</span></a>&nbsp;
+                    <a href="#"><span class="badge badge-secondary">Python</span></a>&nbsp;
+                    <a href="#"><span class="badge badge-secondary">Ruby</span></a>&nbsp;
+                    <a href="#"><span class="badge badge-secondary">Android</span></a>&nbsp;
+                    <a href="#"><span class="badge badge-secondary">iOS</span></a>&nbsp;
+                    <a href="#"><span class="badge badge-secondary">Objective-C</span></a>&nbsp;
+                    <a href="#"><span class="badge badge-secondary">IDE's</span></a>&nbsp;
+                    <a href="#"><span class="badge badge-secondary">Templates</span></a>&nbsp;
+                    <a href="#"><span class="badge badge-secondary">Projects</span></a>&nbsp;
+                    <a href="#"><span class="badge badge-secondary">Tutorials</span></a>&nbsp;
+                    <a href="#"><span class="badge badge-secondary">New updates</span></a>&nbsp;
+                    <a href="#"><span class="badge badge-secondary">Technologies</span></a>&nbsp;
                   </div>
                 </div>
               </div>

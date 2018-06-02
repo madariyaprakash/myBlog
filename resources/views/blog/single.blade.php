@@ -3,7 +3,20 @@
 @section('title', "| $titleTag") <!-- here "" quotation is using for interpolation. -->
 
 @section('content')
-
+	<div id="page--scrolling"><span id="page--scrolling-perc"></span></div>
+	<script type="text/javascript" charset="utf-8">
+		$(window).scroll(function (event) 
+		{
+		    var docheight = $(document).height();
+		    var winheight = $(window).height();
+		    var height = docheight - winheight;
+		    var scroll = $(document).scrollTop();
+		    var scrollperc = scroll/(height/100);
+		    $("#page--scrolling").width(scrollperc+'%');
+		    $("#page--scrolling-perc").text(scrollperc.toFixed(0)+'%');
+		});
+	</script>
+	
 		<div class="row content-top-spacing">
 			<div class="col-md-10 offset-md-1">
 				

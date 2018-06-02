@@ -5,10 +5,10 @@
 @section('title', '| Login')
 
 @section('content')
-    <div class="row content-top-spacing">
+    <div class="row">
             <div class="col-md-8 offset-md-2">
                 <div class="row">
-                    <div class="col-md-8">
+                    {{-- <div class="col-md-8">
                          <img class="profile-img" src="https://lh5.googleusercontent.com/-b0-k99FZlyE/AAAAAAAAAAI/AAAAAAAAAAA/eu7opA4byxI/photo.jpg?sz=120"
                             alt="sign in img">
                             <div class="form-signin">
@@ -29,6 +29,26 @@
 
                                 {!! Form::close() !!}
                             </div>
+                    </div> --}}
+                    <div class="col-md-8">
+                     <!-- new triel starts here --->
+                            <div class="card account-wall">
+                                {!! Form::open() !!}
+                                  <div style="text-align:center; color:gray; font-weight: bold;">
+                                    <p><i class="fas fa-user-circle fa-4x"></i></p>
+                                 </div>
+                                  <ul class="list-group list-group-flush">
+                                    <p class="list-block-item">{{ Form::email('email', null, ['class' => 'form-control', 'placeholder' => 'Email']) }}</p>
+                                    <p class="list-block-item">{{ Form::password('password', ['class' => 'form-control' , 'placeholder' => 'Password']) }}</p>
+                                    <p class="list-block-item">{{ Form::checkbox('remeber') }}{{ Form::label('remeber' , '&nbsp;Remember Me') }} {{ Form::submit('Sign in', array('class' => 'btn btn-lg signin-button btn-block top')) }}</p>
+                                  </ul>
+                                  <div class="card-body">
+                                    <p></p>
+                                    <a href="{{ url('password/resetpage') }}" style="color:orange;" class="card-link">Trouble in sign in?</a>
+                                  </div>
+                                {!! Form::close() !!}
+                            </div>
+                    <!-- new triel Ends here --->
                     </div>
                     <div class="col-md-4 account-wall">
                             <div class="row">
