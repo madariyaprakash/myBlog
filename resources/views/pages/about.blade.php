@@ -35,9 +35,73 @@
 
                                   </ul>
                                   <div class="card-body">
-                                    <p></p>
-                                    <a href="#">Not link yet</a>
+                                    <button class="collapsible-more">Wanna know more about me.</button>
+                                    <div class="coll-content">
+                                       <div class="row">
+                                          <div class="abt-tab">
+                                            <button class="tablinks" onclick="openCity(event, 'London')"><i class="fa fa-gamepad"></i> Hobbies</button>
+                                            <button class="tablinks" onclick="openCity(event, 'Paris')"><i class="fa fa-image"></i> Gallery</button>
+                                            <button class="tablinks" onclick="openCity(event, 'Tokyo')"><i class="fa fa-caret-square-down"></i> More</button>
+                                          </div>
+                                       </div>
+                                        
+
+                                       <div id="London" class="tabcontent">
+                                         <h3>London</h3>
+                                         <p>London is the capital city of England.</p>
+                                       </div>
+
+                                       <div id="Paris" class="tabcontent">
+                                         <h3>Paris</h3>
+                                         <p>Paris is the capital of France.</p> 
+                                       </div>
+
+                                       <div id="Tokyo" class="tabcontent">
+                                         <h3>Tokyo</h3>
+                                         <p>Tokyo is the capital of Japan.</p>
+                                       </div>
+                                    </div>
+
+                                    <!-- Collapse activity JS starts here--->
+                                    <script>
+                                       var coll = document.getElementsByClassName("collapsible-more");
+                                       var i;
+
+                                       for (i = 0; i < coll.length; i++) {
+                                           coll[i].addEventListener("click", function() {
+                                               this.classList.toggle("active");
+                                               var content = this.nextElementSibling;
+                                               if (content.style.display === "block") {
+                                                   content.style.display = "none";
+                                               } else {
+                                                   content.style.display = "block";
+                                               }
+                                           });
+                                       }
+                                    </script>
+                                    <!-- Collapse activity JS ends here--->
+
                                   </div>
+
+
+                                
+
+                                 
+                                 <script>
+                                       function openCity(evt, cityName) {
+                                           var i, tabcontent, tablinks;
+                                           tabcontent = document.getElementsByClassName("tabcontent");
+                                           for (i = 0; i < tabcontent.length; i++) {
+                                               tabcontent[i].style.display = "none";
+                                           }
+                                           tablinks = document.getElementsByClassName("tablinks");
+                                           for (i = 0; i < tablinks.length; i++) {
+                                               tablinks[i].className = tablinks[i].className.replace(" active", "");
+                                           }
+                                           document.getElementById(cityName).style.display = "block";
+                                           evt.currentTarget.className += " active";
+                                       }
+                                       </script>
 
                             </div>
                     <!--  new trial register page here --->

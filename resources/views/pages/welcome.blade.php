@@ -36,11 +36,12 @@
                 <div class="col-md-4">
                     <div class="card">
                         <div class="card-header">
-                            {{-- <div class="btn-group" role="group" aria-label="Button group with nested dropdown"> --}}
-                                <button type="button" class="tablinks btn " onclick="openCity(event, 'London')" id="defaultOpen">Recent</button>
-                                <button type="button" class="tablinks btn" onclick="openCity(event, 'Paris')">Most Viewd</button>
-                                <button type="button" class="tablinks btn" onclick="openCity(event, 'Tokyo')">category</button>
-
+                                 <div class="home-tab">
+                                            <button class="tablinks active" onclick="openCity(event, 'London')" id="defaultOpen"><i class="fa fa-clock"></i> Recent</button>
+                                            <button class="tablinks" onclick="openCity(event, 'Paris')"><i class="fa fa-heart"></i> Liked</button>
+                                            <button class="tablinks" onclick="openCity(event, 'Tokyo')"><i class="fa fa-eye"></i> Viewed</button>
+                                            <button class="tablinks" onclick="openCity(event, 'India')"><i class="fa fa-comment"></i> Commented</button>
+                                  </div>
                                 {{-- <div class="btn-group" role="group">
                                   <button id="btnGroupDrop1" type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                     Dropdown
@@ -85,6 +86,11 @@
                             <div id="Tokyo" class="tabcontent">
                                 <h3>Tokyo</h3>
                                 <p>Tokyo is the capital of Japan.</p>
+                            </div>
+
+                            <div id="India" class="tabcontent">
+                                <h3>India</h3>
+                                <p>India is the beautiful country.</p>
                             </div>
 
                         </div>

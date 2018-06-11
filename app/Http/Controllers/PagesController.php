@@ -82,10 +82,10 @@ e) process variable data and params.
 	}
 
 	public function getVideoTutorials(){
-		return 'Tutorial section and going to update soon';
+		return view ("video_tutorials.tuto_main");
 	}
 	public function getProjects(){
-		return '<h1>Project page under constuctions</h1>';
+		return view ("projects.proj_main");
 	}
 }
 

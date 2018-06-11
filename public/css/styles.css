@@ -1,5 +1,124 @@
 @import url('https://fonts.googleapis.com/css?family=Pacifico|Open+Sans');
 
+/*---------------Home page filter tab buttons designed - starts-----------------*/
+
+.home-tab {
+    overflow: hidden;
+    border-bottom: 1px solid orange;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+
+}
+
+.home-tab button {
+    background-color: inherit;
+    margin-right: 3px;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 4px 6px 15px;
+    transition: 0.3s;
+    font-size:0.7rem;
+    font-weight: bold;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+/* Change background color of buttons on hover */
+.home-tab button:hover {
+    background-color:orange;
+    color:#fff;
+}
+
+/* Create an active/current tablink class */
+.home-tab button.active {
+    background-color: orange;
+    color:#fff;
+}
+
+@media screen and (max-width: 600px) {
+    .home-tab button{
+        font-size:0.55rem;
+    }
+}
+
+/*---------------Home page filter tab buttons designed - Ends-----------------*/
+
+
+
+
+/*----------------- collapsible part in about me page - starts ---------------*/
+/* Style the tab */
+.abt-tab {
+    overflow: hidden;
+    background-color: #fff;
+
+}
+
+/* Style the buttons inside the tab */
+.abt-tab button {
+    background-color: inherit;
+    
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 4px 6px;
+    transition: 0.3s;
+    font-size:0.8rem;
+    font-weight: bold;
+}
+
+/* Change background color of buttons on hover */
+.abt-tab button:hover {
+    background-color:orange;
+    color:#fff;
+}
+
+/* Create an active/current tablink class */
+.abt-tab button.active {
+    background-color: #ccc;
+}
+
+/* Style the tab content */
+.tabcontent {
+    display: none;
+    padding: 6px 12px;
+    border-top: none;
+}
+
+.collapsible-more {
+     display: inline-block;
+    font-weight: 400;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    border: 1px solid transparent;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    border-radius: .25rem;
+    transition: background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+    width:100%;
+    text-align:left;
+}
+
+/* old one */
+
+.coll-content {
+    padding: 0 18px;
+    display: none;
+    overflow: hidden;
+    background-color: #f1f1f1;
+    border-right: 1px solid orange;
+    border-left: 1px solid orange;
+}
+/*----------------- collapsible part in about me page - ends ---------------*/
 
 /*---------About me page design Ends here ------------------------------*/
 .font-style{
@@ -151,7 +270,7 @@
 /*------------------------------ Page Scrolling percentage starts here ------------------ */
 #page--scrolling {
     position: fixed;
-    top: 120px;
+    top: 0px;
     left: 0;
     height: 5px;
     width: 0;

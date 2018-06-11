@@ -1,9 +1,9 @@
-  <nav class="navbar navbar-expand-lg navbar-light bd-navbar navbar-fixed-top">
+  <nav class="navbar navbar-expand-lg navbar-light bd-navbar">
         <nav class="navbar navbar-light">
-  <a class="navbar-brand" href="#">
-    <img src="/images/codellipse4.png" width="140px" height="25px" alt="codellipse">
-  </a>
-</nav>
+          <a class="navbar-brand" href="#">
+            <img src="/images/codellipse4.png" width="140px" height="25px" alt="codellipse">
+          </a>
+        </nav>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
         </button>
@@ -54,33 +54,16 @@
                 Hello! <span class="text text-primary">{{ Auth::user()->name }}</span>
               </a>
               <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                {{-- <div class="card" style="width: 15rem;">
-                  <img class="card-img-top" src=".../100px180/?text=Image cap" alt="Card image cap">
-                  <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                  </div>
-                  <ul class="list-group list-group-flush">
-                    <li class="list-group-item">Cras justo odio</li>
-                    <li class="list-group-item">Dapibus ac facilisis in</li>
-                    <li class="list-group-item">Vestibulum at eros</li>
-                  </ul>
-                  <div class="card-body">
-                    <a href="#" class="card-link">Card link</a>
-                    <a href="#" class="card-link">Another link</a>
-                  </div> --}}
-                       <a class="dropdown-item" href="/user-details/ {{ Auth::user()->id }}">Account settings</a>
+                    <a class="dropdown-item" href="/user-details/ {{ Auth::user()->id }}">Account settings</a>
                     <a class="dropdown-item" href="#">Change password</a>
                     <a class="dropdown-item" href="#"></a>
                     <div class="dropdown-divider"></div>
                     <a class="dropdown-item" href="{{ route('logout') }}">Logout</a>
-                </div> 
+              </div> 
                
-            @else
-
-                <a href="{{route('login')}}" class="lgnbtn lgnbtn-primary"><i class="fas fa-user-circle fa-lg"></i> Login</a>
-            @endif
-            </div>
+              @else
+                  <a href="{{route('login')}}" class="lgnbtn lgnbtn-primary"><i class="fas fa-user-circle fa-lg"></i> Login</a>
+              @endif
         </ul>
         
         <!--<form class="form-inline my-2 my-lg-0">
@@ -150,9 +133,8 @@
                   $(this).children('.icon-remove, .icon-search').toggleClass("icon-remove icon-search");
               });
             </script>
-
-            <!--END - JQUERY SCRIPT TO CAHNGE THE TOGGLE ICON IN NAV TOGGLER -->
-
+          <!--END - JQUERY SCRIPT TO CAHNGE THE TOGGLE ICON IN NAV TOGGLER -->
+          
     </div>
     <!-- Externam contents ENDS here-->
 

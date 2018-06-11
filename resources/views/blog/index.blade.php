@@ -4,13 +4,12 @@
 
 @section('content')
 
-		<div class="row content-top-spacing">
-			<div class="col-md-12 md-offset-1">
-				<h1>Blog</h1>
+			<div class="row content-top-spacing">
+				<div class="col-md-12">
+					<h1>Blog</h1>
+				</div>
 			</div>
-		</div>
-
-		<div class="container">
+			<hr>
 			<div class="row">
 			
 				@foreach($posts as $post)	
@@ -55,7 +54,7 @@
 						  {{-- style="background-image: url('/uploads/{{ $post->post_thumbnail }}'); background-repeat: no-repeat;width: 100%;" --}}
 				@endforeach
 			</div>
-		</div>
+		
 
 		<div class="row">
 			<div class="col-md-12">
