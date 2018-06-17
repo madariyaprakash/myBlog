@@ -68,12 +68,19 @@ e) process variable data and params.
 			'subject' 		=> $request->subject,
 			'bodyMessage' 	=> $request->message
 		);
+		$file = $request->file('files');
 
 		//here emails.contact we created view to show in to the mail 
 		Mail::send('emails.contact', $data, function($message) use ($data){
 			$message->from($data['email']);
 			$message->to('codellipse@gmail.com');
 			$message->subject($data['subject']);
+
+			//Code to attach the file with the email
+			if(count($files > 0)){
+				foreach ($files as $file) {
+					$message->attach($file->getRealPath(),array('as'=>$file->getClientOriginalName(), 'mine'=>$file->getMineType()));				}
+			}
 		});
 
 		Session::flash('success', 'Your mail was sent !');

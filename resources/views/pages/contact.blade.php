@@ -23,6 +23,8 @@
                         </div>
 
                         <input type="submit" value="Send message" class="btn btn-outline-success">
+                        <input id="attach_file" type="file" name="files[]" accept="file_extension|image/*|media_type" multiple class="form-control">
+
                     </form>                                                                <!--End register form -->
                 </div>
             </div>
