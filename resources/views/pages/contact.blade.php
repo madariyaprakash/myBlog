@@ -7,7 +7,7 @@
                 <div class="col-md-12">
                     <h1>Contact Me </h1>
                     <hr>
-                    <form action="{{ url('contact') }}" method="POST" accept-charset="utf-8">  <!-- create register form -->
+                    <form action="{{ url('contact') }}" method="POST" accept-charset="utf-8" enctype="multipart/form-data">  <!-- create register form -->
                         {{ csrf_field() }}
                         <div class="form-group">
                             <label name="email">Email:</label>
@@ -22,9 +22,9 @@
                             <textarea id="message" name="message" placeholder="Enter your text here.." class="form-control"></textarea> 
                         </div>
                         {!! Form::file('a_file'); !!}
-                            @if(count($errors)>0)
+                           {{--  @if(count($errors)>0)
                             <label style="color:red">{{ $errors->first('a_file') }}</label>
-                            @endif
+                            @endif --}}
 
                         <input type="submit" value="Send message" class="btn btn-outline-success">
                     

@@ -60,7 +60,8 @@ e) process variable data and params.
 			'email' 	=> 'required|email',
 			'subject' 	=> 'min:3',
 			'message' 	=> 'min:10',
-			'a_file'	=> 'mimes:jpeg,png,jpg,gif,svg,txt,pdf,ppt,docx,doc,xml'
+			'a_file'	=> 'required|max:10000|mimes:jpeg,png,jpg,gif,svg,txt,pdf,ppt,docx,doc,xls'
+			// 'a_file'	=> 'required|mimes:jpeg,png,jpg,gif,svg,txt,pdf,ppt,docx,doc,xls'
 		]);
 
 		//here to pass the validate value we need to create another array and store those value that array varaible becaue directly we can not pass the request array values so for that we created another $data array. to pass to the view.
@@ -79,7 +80,7 @@ e) process variable data and params.
 			$message->subject($data['subject']);
 			$message->attach($data['a_file']->getRealPath(),array(
 				'as'=>$data['a_file']->getClientOriginalName(),
-				'mime'=>$data['a_file']->getMimeType()
+				'mimes'=>$data['a_file']->getMimeType()
 			));		
 		});
 
