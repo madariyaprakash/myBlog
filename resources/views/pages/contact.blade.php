@@ -21,10 +21,13 @@
                             <label name="message">Message:</label>
                             <textarea id="message" name="message" placeholder="Enter your text here.." class="form-control"></textarea> 
                         </div>
+                        {!! Form::file('a_file'); !!}
+                            @if(count($errors)>0)
+                            <label style="color:red">{{ $errors->first('a_file') }}</label>
+                            @endif
 
                         <input type="submit" value="Send message" class="btn btn-outline-success">
-                        <input id="attach_file" type="file" name="files[]" accept="file_extension|image/*|media_type" multiple class="form-control">
-
+                    
                     </form>                                                                <!--End register form -->
                 </div>
             </div>

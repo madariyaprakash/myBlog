@@ -59,15 +59,19 @@ e) process variable data and params.
 		$this->validate($request, [
 			'email' 	=> 'required|email',
 			'subject' 	=> 'min:3',
-			'message' 	=> 'min:10'
+			'message' 	=> 'min:10',
+			'a_file'	=> 'mimes:jpeg,png,jpg,gif,svg,txt,pdf,ppt,docx,doc,xml'
 		]);
 
 		//here to pass the validate value we need to create another array and store those value that array varaible becaue directly we can not pass the request array values so for that we created another $data array. to pass to the view.
 		$data = array(
 			'email' 		=> $request->email,
 			'subject' 		=> $request->subject,
-			'bodyMessage' 	=> $request->message
+			'bodyMessage' 	=> $request->message,
+			'a_file'		=> $request->a_file
+
 		);
+		
 		$file = $request->file('files');
 
 		//here emails.contact we created view to show in to the mail 
@@ -75,12 +79,10 @@ e) process variable data and params.
 			$message->from($data['email']);
 			$message->to('codellipse@gmail.com');
 			$message->subject($data['subject']);
-
-			//Code to attach the file with the email
-			if(count($files > 0)){
-				foreach ($files as $file) {
-					$message->attach($file->getRealPath(),array('as'=>$file->getClientOriginalName(), 'mine'=>$file->getMineType()));				}
-			}
+			$message->attach($data['a_file']->getRealPath(),array(
+				'as'=>'a_file.' $data['a_file']->getClientOriginalName(),
+				'mine'=>$data['a_file']->getMineType()
+			));		
 		});
 
 		Session::flash('success', 'Your mail was sent !');
