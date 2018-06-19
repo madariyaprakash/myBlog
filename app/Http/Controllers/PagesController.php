@@ -71,8 +71,6 @@ e) process variable data and params.
 			'a_file'		=> $request->a_file
 
 		);
-		
-		$file = $request->file('files');
 
 		//here emails.contact we created view to show in to the mail 
 		Mail::send('emails.contact', $data, function($message) use ($data){
@@ -80,8 +78,8 @@ e) process variable data and params.
 			$message->to('codellipse@gmail.com');
 			$message->subject($data['subject']);
 			$message->attach($data['a_file']->getRealPath(),array(
-				'as'=>'a_file.' $data['a_file']->getClientOriginalName(),
-				'mine'=>$data['a_file']->getMineType()
+				'as'=>$data['a_file']->getClientOriginalName(),
+				'mime'=>$data['a_file']->getMimeType()
 			));		
 		});
 
