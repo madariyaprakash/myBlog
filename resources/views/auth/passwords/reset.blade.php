@@ -23,7 +23,7 @@
                                 <p class="list-block-item">{{ Form::submit('Reset Password', ['class' => 'btn btn-lg signin-button btn-block top', 'style' => 'text-decoration:none;']) }}</p>
                               </ul>
                               <div class="card-body">
-                                <p>Let's go back to <a href="{{ route('login') }}" style="color:orange;" class="card-link">login</a> page.</p>
+                                <p>Wanna go back to <a href="{{ route('login') }}" class="card-link">login</a> page?</p>
                              </div>
                             {!! Form::close() !!}
                     </div>

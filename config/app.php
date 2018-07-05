@@ -182,6 +182,8 @@ return [
         Intervention\Image\ImageServiceProvider::class,
         //This is for the social login connection.
         Laravel\Socialite\SocialiteServiceProvider::class,
+        //this is for the CK editor 
+        Unisharp\Ckeditor\ServiceProvider::class,
 
     ],
 

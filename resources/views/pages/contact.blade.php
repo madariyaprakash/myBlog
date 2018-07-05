@@ -21,12 +21,13 @@
                             <label name="message">Message:</label>
                             <textarea id="message" name="message" placeholder="Enter your text here.." class="form-control"></textarea> 
                         </div>
+                        <label name="message" class="badge badge-dark"><i class="fas fa-paperclip"></i> Any attachment -</label>
                         {!! Form::file('a_file'); !!}
                            {{--  @if(count($errors)>0)
                             <label style="color:red">{{ $errors->first('a_file') }}</label>
                             @endif --}}
-
-                        <input type="submit" value="Send message" class="btn btn-outline-success">
+                        <br>
+                        <input type="submit" value="Send message" class="btn btn-outline-success top-spacing">
                     
                     </form>                                                                <!--End register form -->
                 </div>

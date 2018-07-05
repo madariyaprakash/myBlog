@@ -20,7 +20,12 @@
 //Auth::routes();
 
 
-
+//Ask question
+//Route::resource('questions', 'QuestionController');
+Route::get('questions/create/{id}',['as'=> 'ask_question', 'uses'=>'QuestionController@create']);
+Route::post('questions/{id}', ['as'=> 'questions.store','uses'=>'QuestionController@store']);
+Route::get('questions/ask_question/{id}', ['as'=> 'questions.show', 'uses' => 'QuestionController@show']);
+//Route::post('questions', 'QuestionController@store');
 
 //Facebook Authentication route is here.
 Route::get('login/{provider}', 'Auth\LoginController@redirectToProvider');

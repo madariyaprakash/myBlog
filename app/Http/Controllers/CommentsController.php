@@ -42,6 +42,7 @@ class CommentsController extends Controller
      */
     public function store(Request $request, $post_id)
     {
+        //dd($request);
         $this->validate($request, array(
             'name' => 'required|max:255',
             'email' => 'required|email|max:255',
@@ -56,6 +57,7 @@ class CommentsController extends Controller
         $comment->comment = $request->comment;
         $comment->approved =true;
         $comment->post()->associate($post); //here we need to put reference from which this post id is came from.
+
 
         $comment->save();
 

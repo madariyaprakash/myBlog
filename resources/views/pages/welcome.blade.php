@@ -19,7 +19,6 @@
 
             <div class="row">
                 <div class="col-md-8">
-
                     @foreach($posts as $post)
                         <div class="post">
                             <h3>{{$post->title }}</h3>
@@ -29,11 +28,24 @@
                             <!--'blog/' is used to route for the specific slug -->
                             <!-- in url($post->slug) here it will check for the specific post which user will select that will send to the blogcontroller and that will send to the single view to show all the data which belong to the particular slug -->
                         </div>
-
                         <hr>
                     @endforeach
                 </div>
                 <div class="col-md-4">
+                    <div class="ask-block">
+                          <p id="ask_alert_title">Got stuck somewhere or have any query?</p>
+                          <p id="ask_alert_signin">Please <a href="{{route('login')}}">sign in</a> to ask question.</p>
+                      @if(Auth::check())
+                          <!-- here we are using script to hide the alert ask question sign in option para which has written above the authorization check -->
+                          <script>
+                            document.getElementById('ask_alert_title').style.visibility = "hidden";
+                            document.getElementById('ask_alert_signin').style.visibility = "hidden";
+                          </script> 
+                          <a href="/questions/create/{{ Auth::user()->id }}" class="btn btn-primary btn-block">Ask Question</a>
+                          <a href="#" class="asked-ques">Visit asked questions <i class="fas fa-arrow-alt-circle-right"></i></a>
+                      @endif
+                    </div>
+                    <br>
                     <div class="card">
                         <div class="card-header">
                                  <div class="home-tab">
@@ -42,41 +54,29 @@
                                             <button class="tablinks" onclick="openCity(event, 'Tokyo')"><i class="fa fa-eye"></i> Viewed</button>
                                             <button class="tablinks" onclick="openCity(event, 'India')"><i class="fa fa-comment"></i> Commented</button>
                                   </div>
-                                {{-- <div class="btn-group" role="group">
-                                  <button id="btnGroupDrop1" type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                    Dropdown
-                                  </button>
-                                  <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
-                                    <a class="dropdown-item" href="#">Dropdown link</a>
-                                    <a class="dropdown-item" href="#">Dropdown link</a>
-                                  </div>
-                                </div> 
-                            </div>--}}
                         </div>
                         <div class="card-body">
-                            <div id="London" class="tabcontent">
-                              
-                                    @foreach($posts as $post)
-                                        <div class="row">
-                                          <div class="col-md-2">
-                                            <img class="rcnt-post" src="/uploads/{{ $post->post_thumbnail }}" alt="post-image"></img>
-                                          </div>
-                                          <div class="col-md-10">
-                                            <a href="{{ url('blog/'.$post->slug) }}"><h3 style="font-size: 15px">{{$post->title }}</h3></a>
-                                            <p style="font-size: 10px">{{ substr(strip_tags($post->body), 0, 300) }}{{ strlen(strip_tags($post->body)) > 300 ? "..." : "" }}</p>
-                                          </div>
-                                        
-
-                                           {{--  
-                                            <a href="{{ url('blog/'.$post->slug) }}" class="blogButton blogButton-primary"> <img src="images/read_more.png" alt="post-image"></img></a> --}}
-                                            <!--'blog/' is used to route for the specific slug -->
-                                            <!-- in url($post->slug) here it will check for the specific post which user will select that will send to the blogcontroller and that will send to the single view to show all the data which belong to the particular slug -->
+                                    <div id="London" class="tabcontent">
+                                      
+                                      @foreach($posts as $post)
+                                                <div class="row">
+                                                  <div class="col-md-2">
+                                                    <img class="rcnt-post" src="/uploads/{{ $post->post_thumbnail }}" alt="post-image"></img>
+                                                  </div>
+                                                  <div class="col-md-10">
+                                                    <a href="{{ url('blog/'.$post->slug) }}"><h3 style="font-size: 15px">{{$post->title }}</h3></a>
+                                                    <p style="font-size: 10px">{{ substr(strip_tags($post->body), 0, 300) }}{{ strlen(strip_tags($post->body)) > 300 ? "..." : "" }}</p>
+                                                  </div>
+                                                   {{--  
+                                                    <a href="{{ url('blog/'.$post->slug) }}" class="blogButton blogButton-primary"> <img src="images/read_more.png" alt="post-image"></img></a> --}}
+                                                    <!--'blog/' is used to route for the specific slug -->
+                                                    <!-- in url($post->slug) here it will check for the specific post which user will select that will send to the blogcontroller and that will send to the single view to show all the data which belong to the particular slug -->
                                   
-                                        </div>
+                                                </div>
                                         <hr>
-                                    @endforeach
+                                      @endforeach
                                    
-                                  </div>
+                                    </div>
 
                             <div id="Paris" class="tabcontent">
                                 <h3>Paris</h3>
@@ -96,8 +96,7 @@
                         </div>
                     </div>
                   </div>
-                </div>
-
+            </div>
 
                       <script>
                       function openCity(evt, cityName) {
