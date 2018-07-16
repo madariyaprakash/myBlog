@@ -31,9 +31,11 @@ class QuestionController extends Controller
      */
     public function create($id)
     {
+         //to get the respective user details who logged in and going to ask question
          $user = User::find($id);
-         //$question = Question::where('user_id','=', $id)->get();
+         //to fetch the record the asked questions of the logged in user.
          $question = Question::where('user_id', $id)->get();
+         //to fetch the all the questions which was asked so far from all the register users
          $total_ques_count = Question::all();
          return view('Questions.create')->withUser($user)->withQuestion($question)->withTotalquestionasked($total_ques_count);
     }
@@ -70,11 +72,15 @@ class QuestionController extends Controller
             // Set post-thumbnail url
             $question->post_thumbnail = $filename; 
         }
+        else{
+
+            $question->post_thumbnail = null;
+        }
 
         $question->save();
         Session::flash('success', 'Question has been post successfully !');
 
-        return redirect()->route('questions.show', $question->id);
+        return redirect()->route('questions.show', [$question->user_id, $question->id]);
     }
 
     /**
@@ -83,12 +89,13 @@ class QuestionController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function show($id)
+    public function show($user_id, $id)
     {
         //passing the respective user_id from store redirecting option so that use can see the respective posted question
         $user_question = Question::find($id);
+        $user_details = User::find($user_id);
         //passing the respective posted data to the view
-        return view('questions.show')->withUserquestion($user_question); 
+        return view('questions.show')->withUserquestion($user_question)->withUserdetails($user_details); 
 
     }
 

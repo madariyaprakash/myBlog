@@ -1,5 +1,42 @@
 @import url('https://fonts.googleapis.com/css?family=Pacifico|Open+Sans');
 
+.cow_design{
+  color: grey;
+}
+
+/*-----------------show question page design for question title, body and reply----------*/
+.ques_title{
+  padding-left: 0.8rem;
+  padding-bottom: 0.4rem;
+  color:#eb8b3b;
+  border-bottom: 1.5px solid #eb8b3b;
+  border-left: 1.5px solid #eb8b3b;
+  border-top-left-radius: 8px;
+  font-size:1.2rem;
+  font-weight:bold;
+
+}
+.ques_body{
+  padding-left: 0.8rem;
+  padding-top: 0.4rem;
+  border-left: 1.5px solid #eb8b3b;
+  border-bottom-left-radius: 8px;
+  color:#646261;
+}
+.ques_ask_user{
+  padding:0.5rem;
+  background-color: #e8e8e7;
+  border-radius:5px;
+}
+.ask_label{
+  color:#73706f;
+   font-size:0.9rem;
+}
+.ask_label .label_name{
+  color:orange;
+}
+/*-----------------show question page design for question title, body and reply----------*/
+
 /*---------------------- ask question block in welcome page design starts -------------*/
 .ask-block{
     padding: .75rem 1.25rem;

@@ -53,10 +53,11 @@
 				    <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
 				      <div class="card-body">
 				      	<?php 
-				        $askquest_count = $question->count(); 
+				        $askquest_count = $question->count();
 				        ?>
 				        @foreach($question as $questions)
-				        		<div class="ask_box"><a href="#" class="asked_question_list">{{ strip_tags($questions->title) }}</a></div><hr>
+				        <!-- here we want to show the current user asked question with his user id. So, this block will retrieve the current user-->
+				        		<div class="ask_box"><a href="{{ url('questions/ask_question/'.$user->id.'/'.$questions->id) }}" class="asked_question_list">{{ strip_tags($questions->title) }}</a></div><hr>
 				        @endforeach
 				      </div>
 				    </div>
@@ -72,15 +73,8 @@
 				    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
 				      <div class="card-body">
 				      	@foreach($totalquestionasked as $allquestions)
-				        <div class="ask_box"><a href="#" class="asked_question_list">{{ strip_tags($allquestions->title) }}</a></div><hr>
-				        {{-- 	@if($questions->count()==0)
-				        	{
-				        		<h5>Sorry you haven't asked any question</h5>
-				        	}
-							@else
-				        		{
-				        		 <a href="#">{{ $questions->body }}</a>
-				        		} --}}
+				      	<!-- here we want to fetch the questions from the rendom users who asked the question with his user id that we we can get in the Question table and same id we are passing there so that we could fetch the user name from User table as well in singe question show page -->		
+				        	<div class="ask_box"><a href="{{ url('questions/ask_question/'.$allquestions->user_id.'/'.$allquestions->id) }}" class="asked_question_list">{{ strip_tags($allquestions->title) }}</a></div><hr>
 				        @endforeach
 				        
 				      </div>

@@ -38,8 +38,8 @@
                       @if(Auth::check())
                           <!-- here we are using script to hide the alert ask question sign in option para which has written above the authorization check -->
                           <script>
-                            document.getElementById('ask_alert_title').style.visibility = "hidden";
-                            document.getElementById('ask_alert_signin').style.visibility = "hidden";
+                            document.getElementById('ask_alert_title').remove();
+                            document.getElementById('ask_alert_signin').remove();
                           </script> 
                           <a href="/questions/create/{{ Auth::user()->id }}" class="btn btn-primary btn-block">Ask Question</a>
                           <a href="#" class="asked-ques">Visit asked questions <i class="fas fa-arrow-alt-circle-right"></i></a>

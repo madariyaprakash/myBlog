@@ -24,7 +24,7 @@
 //Route::resource('questions', 'QuestionController');
 Route::get('questions/create/{id}',['as'=> 'ask_question', 'uses'=>'QuestionController@create']);
 Route::post('questions/{id}', ['as'=> 'questions.store','uses'=>'QuestionController@store']);
-Route::get('questions/ask_question/{id}', ['as'=> 'questions.show', 'uses' => 'QuestionController@show']);
+Route::get('questions/ask_question/{user_id}/{id}', ['as'=> 'questions.show', 'uses' => 'QuestionController@show']);
 //Route::post('questions', 'QuestionController@store');
 
 //Facebook Authentication route is here.
@@ -80,6 +80,7 @@ Route::get('contact', "PagesController@getContact");
 Route::post('contact', "PagesController@postContact");
 Route::get('about', "PagesController@getAbout");
 Route::get('video-tutorials', "PagesController@getVideoTutorials");
+Route::get('cow', "PagesController@getCow");
 Route::get('projects', "PagesController@getProjects");
 //Route::get('test', "PagesController@getTest");
 Route::get('/', "PagesController@getIndex");

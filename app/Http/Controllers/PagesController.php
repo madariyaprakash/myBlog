@@ -97,5 +97,8 @@ e) process variable data and params.
 	public function getProjects(){
 		return view ("projects.proj_main");
 	}
+	public function getCow(){
+		return view ("pages.cow");
+	}
 }
 
