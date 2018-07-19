@@ -98,9 +98,6 @@ e) process variable data and params.
 		return view ("projects.proj_main");
 	}
 	
-	public function __construct() {
-        $this->middleware('auth');  // to restrict permission to open the post records for guest users.
-    }
 	public function getCow(){
 		return view ("pages.cow");
 	}
