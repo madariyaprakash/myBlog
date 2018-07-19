@@ -6,6 +6,12 @@
 	<div class="row">
 		<div class="col-md-8">
 			<div class="cow_design top-spacing">
+				<p style="padding: 10px; color:white; background-color: black; border-radius:5px;"><span id="time" style="color: yellow; font-size: 0.8rem; margin-right: 5px;">df</span>Okay dear, do one thing, don't make your life so complicated..you said them "you are not talking with me." I know you must be giving time yourself, right..so, no issue..even you are not talking with me. but make sure that you are not raising their hope not for bhutni as well that you are coming back to his life..and most imp thing, at certain point If you thing that you should go with him, and you are done with this running life..please never forget to tell me without any hasitaion, because I always gave you a comfort zone where you can share with me every matter whether it is physical or emotional so why not this, because I give importance to you more than others..so, never ever think what monkey would think for ur decisions, I would be happy if you are happy..the moment you make any dicision, please stick on that and update me any how..</p>
+				<script>
+				var d = new Date();
+				document.getElementById("time").innerHTML = d;
+				</script>
+				<hr>
 				<p style="padding: 10px; color:white; background-color: black; border-radius:5px;">sorry dear, actually I went to bathroom, so that's y I could not see your msg.. so, now you reply me.. I will reply back to you.. and why you got angry mis??</p>
 				<hr>
 				<p style="padding: 10px; color:white; background-color: black; border-radius:5px;">I got your mail dear, and that "bye miss you" I have written for that specific day only, not permanently. here miss you mean is I missing those moments which I used to have not I m saying to you forever stupid, silly, duffer, dimag se paidal. I'm getting your all the mail.. whenever you mail me.. I will reply here only so refresh the page after some time you get reply..okay</p>
@@ -31,3 +37,4 @@ So, please think once dear, how would I suppose to manage the moment where you j
 		</div>
 	</div>
 @endsection
+
