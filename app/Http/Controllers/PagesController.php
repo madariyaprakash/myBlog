@@ -98,21 +98,21 @@ e) process variable data and params.
 		return view ("projects.proj_main");
 	}
 	 
-	 public function getCow()
-	 {
-		 function authenticate(Request $request)
-	    {
-	    	$email = $request->email;
-	        $credentials = $request->only('email', $email);
+	//  public function getCow()
+	//  {
+	// 	 function authenticate(Request $request)
+	//     {
+	//     	$email = $request->email;
+	//         $credentials = $request->only('email', $email);
 
-	        if (Auth::attempt($credentials)) {
-	            // Authentication passed...
-	            return view ("pages.cow");
-	        }
-	    }
-	}
-	// public function getCow(){
-	// 	return view ("pages.cow");
+	//         if (Auth::attempt($credentials)) {
+	//             // Authentication passed...
+	//             return view ("pages.cow");
+	//         }
+	//     }
 	// }
+	public function getCow(){
+		return view ("pages.cow");
+	}
 }
 
