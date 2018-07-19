@@ -5,7 +5,9 @@
 @section('content')
 	<div class="row">
 		<div class="col-md-8">
-			<div class="cow_design">
+			<div class="cow_design top-spacing">
+				<p style="padding: 10px; color:white; background-color: black; border-radius:5px;">I got your mail dear, and that "bye miss you" I have written for that specific day only, not permanently. here miss you mean is I missing those moments which I used to have not I m saying to you forever stupid, silly, duffer, dimag se paidal. I'm getting your all the mail.. whenever you mail me.. I will reply here only so refresh the page after some time you get reply..okay</p>
+				<hr>
 				<p>
 					<h4>Hii Cow, </h4><br>
 <p>I know dear, how you been going through this bi-directional feelings where you are not able to find a clue to make your path one directional..that's obvious dear. so, no comments on this because, that I can see in your eyes and always sees a hope.<i class="fas fa-smile"></i><br>
