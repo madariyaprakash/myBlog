@@ -92,8 +92,9 @@ class QuestionController extends Controller
     public function show($user_id, $id)
     {
         //passing the respective user_id from store redirecting option so that use can see the respective posted question
-        $user_question = Question::find($id);
         $user_details = User::find($user_id);
+        $user_question = Question::find($id);
+        
         //passing the respective posted data to the view
         return view('questions.show')->withUserquestion($user_question)->withUserdetails($user_details); 
 

@@ -19,9 +19,19 @@
 //routes for login section
 //Auth::routes();
 
+//reply part
+Route::get('reply', 'ReplyController@create');
+Route::post('reply/store', ['as'=>'reply.store', 'uses'=>'ReplyController@store']);
+Route::get('reply/{id}', ['as'=>'reply.show', 'uses' => 'ReplyController@show']);;
+
 //chat part
 Route::get('chat', 'ChatController@chat');
 Route::post('send', 'ChatController@send');
+
+
+Route::get('chathub', 'ChatsController@index');
+Route::get('chathub/messages', 'ChatsController@fetchMessages');
+Route::post('chathub/messages', 'ChatsController@sendMessage');
 //Ask question
 //Route::resource('questions', 'QuestionController');
 Route::get('questions/create/{id}',['as'=> 'ask_question', 'uses'=>'QuestionController@create']);

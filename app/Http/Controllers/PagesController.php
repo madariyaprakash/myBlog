@@ -6,6 +6,8 @@ use App\Post;
 use App\USer;
 use Mail;
 use Session;
+use App\Reply;
+use Illuminate\Support\Facades\Auth;
 
 Class PagesController extends Controller{
 
@@ -17,6 +19,9 @@ d) work with View page also to pass the data and retrieve the data.
 e) process variable data and params.
 
 */
+	// public function __construct() {
+ //        $this->middleware('auth');  // to restrict permission to open the post records for guest users.
+ //    }
 
 	public function getIndex(){
 		#return "Hello Home page";   //we can directly pass the string value also.
@@ -99,7 +104,8 @@ e) process variable data and params.
 	}
 	 
 	public function getCow(){
-		return view ("pages.cow");
+			$cow_reply = Reply::all();
+			return view ("pages.cow")->withCowreply($cow_reply);
 	}
 }
 

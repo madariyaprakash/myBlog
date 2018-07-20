@@ -8,7 +8,7 @@
 	<style type="text/css">
 		.list-group{
 			overflow-y: scroll;
-			height:200px;
+			height:500px;
 		}
 	</style>
 </head>
