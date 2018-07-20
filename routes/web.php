@@ -19,7 +19,9 @@
 //routes for login section
 //Auth::routes();
 
-
+//chat part
+Route::get('chat', 'ChatController@chat');
+Route::post('send', 'ChatController@send');
 //Ask question
 //Route::resource('questions', 'QuestionController');
 Route::get('questions/create/{id}',['as'=> 'ask_question', 'uses'=>'QuestionController@create']);
@@ -88,5 +90,6 @@ Route::resource('posts', 'PostController');  //to route all the action for post 
 Route::post('/like', ['as' => 'post.like', 'uses' => 'PostController@postLike']);
 
 Route::get('/home', 'HomeController@index')->name('home');
+
 
 

@@ -9,14 +9,53 @@ require('./bootstrap');
 
 window.Vue = require('vue');
 
+import Vue from 'vue'
+import VueChatScroll from 'vue-chat-scroll'
+Vue.use(VueChatScroll)
+
 /**
  * Next, we will create a fresh Vue application instance and attach it to
  * the page. Then, you may begin adding components to this application
  * or customize the JavaScript scaffolding to fit your unique needs.
  */
 
-Vue.component('example', require('./components/Example.vue'));
+Vue.component('message', require('./components/message.vue'));
 
 const app = new Vue({
-    el: '#app'
+    el: '#app',
+
+   	data:{
+   		message:'',
+   		chat:{
+   			message:[]
+   		}
+   	},
+
+   	methods:{
+   		send(){
+   			if(this.message.length != 0) {
+   				this.chat.message.push(this.message);
+   				axios.post('/send', {
+
+   					message : this.message
+
+				  })
+				  .then(response=> {
+				    console.log(response);
+				    this.message='';
+				  })
+				  .catch(error=> {
+				    console.log(error);
+				  });
+   			}
+   		}
+   	},
+   	mounted(){
+   		Echo.private('chat')
+        .listen('ChatEvent', (e) => {
+        	this.chat.message.push(e.message);
+        // console.log(e);
+    }); 
+   	}
+
 });

@@ -12,9 +12,11 @@ class EventServiceProvider extends ServiceProvider
      *
      * @var array
      */
+
+    //for the boradcasting of the any message we will have to use as event and lister that would configure below here
     protected $listen = [
-        'App\Events\Event' => [
-            'App\Listeners\EventListener',
+        'App\Events\ChatEvent' => [
+            'App\Listeners\ChatListener',
         ],
     ];
 
