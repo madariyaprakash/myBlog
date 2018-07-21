@@ -28,7 +28,7 @@ e) process variable data and params.
 		//return view("pages.welcome");  // we can directly render the page and this the best feature of the MVC seperation.
 
 		//HERE WE ARE USING QUERY BUILDER CONCEPT TO LIMIT THE DATA PASSING THE POST DATAS TO THE MAIN PAGE.
-		$posts = Post::orderby('created_at', 'desc')->limit(4)->get();
+		$posts = Post::orderby('created_at', 'desc')->limit(3)->get();
 		//$users= User::all();
 		return view("pages.welcome")->withPosts($posts);
 	}
