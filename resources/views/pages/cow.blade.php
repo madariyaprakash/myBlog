@@ -6,10 +6,12 @@
 	<div class="row">
 		<div class="col-md-10">
 			<div class="cow_design top-spacing offset-2">
-				@foreach($cowreply as $reply)
+				{{-- @foreach($cowreply as $reply)
 						<p style="padding: 10px; color:white; background-color:black; border-style:solid 1px black; border-radius:5px;"><span style="font-size:0.6rem; color:yellow;">{{$reply->created_at}}</span> &nbsp;{{ $reply->body }}</p>
-				@endforeach
-				<p style="padding: 10px; color:white; background-color: black; border-radius:5px;"> sorry cow, I could not reply your question now, because until I have laptop in my hand It could not be possible to update msg for you, yesterday late night night I was working on chat option but still I could not make it some error was still there..So, I will reply you tomorrow dear.. I hope today night I can make it.. so tomorrow morning I will reply you.. so you will have chat option there I can reply.. sorry dear cow..stay smile.. ;-)</p>
+				@endforeach --}}
+				<p style="padding: 10px; color:white; background-color: black; border-radius:5px;">sorry, actually I was working on this website so it was in error.. so now If you see this page please let me know with mail..and now I have update option where we can reply from any where..so please search as "http://159.89.169.152/blog/cow-talk".. you will see a page where you can make comment and I as well..so after seeing this page please confirm me once with mail option.. then you can ask your question in cow-talk option I will reply you dear..</p>
+				<hr>
+				{{-- <p style="padding: 10px; color:white; background-color: black; border-radius:5px;"> sorry cow, I could not reply your question now, because until I have laptop in my hand It could not be possible to update msg for you, yesterday late night night I was working on chat option but still I could not make it some error was still there..So, I will reply you tomorrow dear.. I hope today night I can make it.. so tomorrow morning I will reply you.. so you will have chat option there I can reply.. sorry dear cow..stay smile.. ;-)</p>
 				<hr>
 				<p style="padding: 10px; color:white; background-color: black; border-radius:5px;">I respect your feelings and emotions dear, I never pushed you for anything. so, always come up with strong reason what makes u to do furhter things or taking steps. whatever you do, never leave things to regret. take ur time as much as u want, I will wait. I'm not trying to manipulate your mind dear towards me.. but it's fact..If you could not open up with your sis also for your feelings then sorry dear things will not be in ur hand.. because, there will be some certain point where we sould take our chance and open up with all words what we kept on hiding in heart. If we still could not do, means we are lying with ourselve not with others..cow, dear I always told you please appear emotionally bold if you have any words to say with someone..so, believe yourself..and dont forget to delete history before leaving from the PC where you sitting..because it is not authenticated yet..today till evening I will make this page as authenticated page, so, if you login with ur user id and password then only it will get open..so please take care of it..I will make chat option today..so, I will update you here only in next msg how can you reply in chat option..</p>
 				<hr>
@@ -19,7 +21,7 @@
 				<hr>
 				<p style="padding: 10px; color:white; background-color: black; border-radius:5px;">I got your mail dear, and that "bye miss you" I have written for that specific day only, not permanently. here miss you mean is I missing those moments which I used to have not I m saying to you forever stupid, silly, duffer, dimag se paidal. I'm getting your all the mail.. whenever you mail me.. I will reply here only so refresh the page after some time you get reply..okay</p>
 				<hr>
-				<p>
+				<p> --}}
 					{{-- <h4>Hii Cow, </h4><br>
 				<p>I know dear, how you been going through this bi-directional feelings where you are not able to find a clue to make your path one directional..that's obvious dear. so, no comments on this because, that I can see in your eyes and always sees a hope.<i class="fas fa-smile"></i><br>
 				<p>Anyway, It's been long time expressing my feelings. So,again I came back with flood of my feelings so try to bear with me dear..hope you will read it completely..</p>

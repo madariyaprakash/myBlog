@@ -104,8 +104,8 @@ e) process variable data and params.
 	}
 	 
 	public function getCow(){
-			$cow_reply = Reply::all();
-			return view ("pages.cow")->withCowreply($cow_reply);
+			// $cow_reply = Reply::all();
+			return view ("pages.cow");
 	}
 }
 
