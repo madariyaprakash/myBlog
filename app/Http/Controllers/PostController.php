@@ -25,7 +25,7 @@ class PostController extends Controller
     {
         // create varaible to retrive the post data.
         //$post = Post::all();             TO DISPLAY ALL THE RECORDS WITHOUT PAGINATION 
-        $post = Post::orderby('id', 'desc')->SimplePaginate(7); //TO PAGINATE WE CAN USE PAGINATE METHOD AND ENTER THE VALUE HOW MANY ROW WE WANT TO DISPLAY/PAGE
+        $post = Post::orderby('id', 'ASC')->SimplePaginate(7); //TO PAGINATE WE CAN USE PAGINATE METHOD AND ENTER THE VALUE HOW MANY ROW WE WANT TO DISPLAY/PAGE
         //then pass the data to index view to see all the details
         return view('posts.index')->withPosts($post); //with('post', $post)
     }
