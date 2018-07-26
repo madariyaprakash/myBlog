@@ -1,6 +1,6 @@
   <nav class="navbar navbar-expand-lg navbar-light bd-navbar">
         <nav class="navbar navbar-light">
-          <a class="navbar-brand" href="#">
+          <a class="navbar-brand" href="/">
             <img src="/images/codellipse4.png" width="140px" height="25px" alt="codellipse">
           </a>
         </nav>
